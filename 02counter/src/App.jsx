@@ -4,14 +4,14 @@ import './App.css'
 function App() {
 
   const [counter, incrementer] = useState(0);
+  const decrement = () =>{
+    incrementer(counter-1);
+  }
   const increment = () =>{
     incrementer(counter+3);
     incrementer(counter+2);
     incrementer(counter+1);
-    incrementer(counter+1);
-  }
-  const decrement = () =>{
-    incrementer(counter-1);
+    incrementer(counter+0);
   }
   return (
     <>
